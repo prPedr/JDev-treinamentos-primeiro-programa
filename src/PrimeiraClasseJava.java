@@ -5,6 +5,7 @@ public class PrimeiraClasseJava {
     public static void main(String[] args) {
         nomeUsuario();
         maiorIdade();
+        mediaNotasAlunos();
     }
 
     public static void nomeUsuario() {
@@ -23,5 +24,19 @@ public class PrimeiraClasseJava {
         } else {
             System.out.println("E sou menor de idade");
         }
+    }
+
+    public static void mediaNotasAlunos() {
+        float nota1, nota2, nota3, nota4, nota5, media;
+
+        nota1 = 7.90f;
+        nota2 = 3.80f;
+        nota3 = 9.2f;
+        nota4 = 4.90f;
+        nota5 = 8.70f;
+
+        media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
+
+        System.out.println("A media de notas do aluno foi " + media);
     }
 }
